@@ -1,5 +1,13 @@
 # Pod Test Repo
 
+Greetings [Our_Team_Name]!
+
+Congratulations for making it this far. I know last week was a little challenging. Don't worry. Every class struggled with the initial setup. Once you survive the first 3 classes, the fun begins. 
+
+Now that you have created your own repo and you'll now learn how to do git collaborations. Inside this repo, each of you will see a directory in your name. This is where you will now submit your completed challenges. Below is the set of instructions on how to do this and best practices.
+
+Keep up the great work. I am happy to be a part of your journey!
+
 # To do before each breakout session:
 
 `git pull` on the **main** branch.
