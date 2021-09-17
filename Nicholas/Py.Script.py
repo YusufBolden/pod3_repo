@@ -1,0 +1,1 @@
+print("I need good practice ideas, any suggestions?")
