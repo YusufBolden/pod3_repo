@@ -20,3 +20,4 @@ print((5 * 9/5) + 32)
 celsius_30 = (85.1-32) * (5/9)
 farenheit_85 = (30.2 * 9/5) + 32
 print(bool(celsius_30 < farenheit_85))
+
