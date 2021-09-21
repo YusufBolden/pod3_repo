@@ -23,7 +23,7 @@ print("Challenge 3.2.2: Perform user-specific calculations")
 # TODO: You have all 3 user inputs stores in variables. Based on that, write conditional (if-elif-else) statements to find out the number of stocks of the company that can be purchased with the savings amount.
 number_of_stocks = 0
 if stock == "amzn":
-    number_of_stocks = ({savings} / {amazon})
+    number_of_stocks = (savings} / {amazon)
 elif number_of_stocks > 0:
     print(f'{name} has $ {savings} You can purchase {number_of_stocks} of amazon')
 elif number_of_stocks < 0:
