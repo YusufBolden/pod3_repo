@@ -9,9 +9,9 @@ print("Challenge 2.2:")
 print(f"In the 2020 NBA playoffs, Jamal Murray made {jamal_murray_3pts_made} 3 point shots")
 
 # TODO: Create print statement here for Fred VanVleet
-print(f"fred_vanvleet_3pts_made")
+print(f"In the 2020 NBA playoffs, Fred Vanvleet made {fred_vanvleet_3pts_made} 3 point shots")
 # TODO: Create print statement here for James Harden
-print(f"james_harden_3pts_made")
+print(f"In the 2020 NBA playoffs, James Harden  made {james_harden_3pts_made} 3 point shots")
 
 print("Challenge 2.3: Store the number of three point shot attempts in variables for each player")
 
