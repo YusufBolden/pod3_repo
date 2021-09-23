@@ -2,7 +2,7 @@ print("Challenge 2.1:")
 jamal_murray_3pts_made = 46
 # TODO: Create variable here for number of 3 pt shots made by Fred VanVleet
 fred_vanvleet_3pts_made = 43
-# TODO: Create variable here for number of 3 pt shots made by James Harden
+# TODO: Create variable here for number of 3 pt shots made by James Hardengit 
 james_harden_3pts_made = 37
 
 print("Challenge 2.2:")
