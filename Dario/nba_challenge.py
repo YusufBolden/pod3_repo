@@ -1,24 +1,35 @@
 print("Challenge 2.1:")
 jamal_murray_3pts_made = 46
 # TODO: Create variable here for number of 3 pt shots made by Fred VanVleet
+fred_vanvleet_3pts_made
 # TODO: Create variable here for number of 3 pt shots made by James Harden
-​
+james_harden_3pts_made
+print()
+
 print("Challenge 2.2:")
 print(f"In the 2020 NBA playoffs, Jamal Murray made {jamal_murray_3pts_made} 3 point shots")
 # TODO: Create print statement here for Fred VanVleet
+print(f"In the 2020 NBA playoffs, Fred VanVleet made {fred_vanvleet_3pts_made} 3 point shots")
 # TODO: Create print statement here for James Harden
+print(f"In the 2020 NBA playoffs, James Harden made {james_harden_3pts_made} 3 point shots")
 print()
-​
+
 print("Challenge 2.3: Store the number of three point shot attempts in variables for each player")
 # TODO: Create variable here for number of 3 pt shot attempts by Jamal Murray
+jamal_murray_3pt_shot_attempts = 93
 # TODO: Create variable here for number of 3 pt shot attempts by Fred VanVleet
+fred_vanvleet_3pt_shot_attempts = 110
 # TODO: Create variable here for number of 3 pt shot attempts by James Harden
+james_harden_3pt_shot_attempts = 109
 print()
 ​
 print("Challenge 2.4: Build on your print statement")
 # TODO: Copy the three print statements you wrote in Challenge 2.2 and extend them to also print
 # the number of three point shots for each player. E.g., output should be similar to
 # "In the 2020 NBA playoffs, player X made Y 3 point shots and Z 3 point shot attempts."
+print(f"In the 2020 NBA playoffs, Jamal Murray made {jamal_murray_3pts_made} 3 point shots and {jamal_murray_3pt_shot_attempts} 3 point shot attempts")
+print(f"In the 2020 NBA playoffs, Fred VanVleet made {fred_vanvleet_3pts_made} 3 point shots and {fred_vanvleet_3pt_shot_attempts} 3 point shot attempts")
+print(f"In the 2020 NBA playoofs, James Harden made {james_harden_3pts_made} 3 point shots and {james_harden_3pt_shot_attempts} 3 point shots attempts")
 print()
 ​
 print("Challenge 2.5: Calculate, store, and print the three point percentage for each player")
