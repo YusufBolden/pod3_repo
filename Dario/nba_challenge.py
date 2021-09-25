@@ -85,5 +85,39 @@ print(f'Lakers_are_best: {type(2.0)}')
 print()
 print('Challenge 3.5: Type Conversion Part 2')
 # TODO: Take each player's three point percentage (from part 2.5) and convert it to a string, then print it out.
-print(jamal_murray_3pts_made/jamal_murray_3pt_shot_attempts)
+three_point_percentage = jamal_murray_3pts_made/jamal_murray_3pt_shot_attempts
+print(three_point_percentage)
+three_point_percentage = str()
+three_point_percentage = str(type(three_point_percentage))
+print(three_point_percentage)
+print()
+three_point_percentage = fred_vanvleet_3pts_made/fred_vanvleet_3pt_shot_attempts
+print(three_point_percentage)
+three_point_percentage = str()
+three_point_percentage = str(type(three_point_percentage))
+print(three_point_percentage)
+print()
+three_point_percentage = james_harden_3pts_made/james_harden_3pt_shot_attempts
+print(three_point_percentage)
+three_point_percentage = str()
+three_point_percentage = str(type(three_point_percentage))
+print(three_point_percentage)
+print()
 # TODO: Take each player's three point percentage (from part 2.5) and convert it to an integer, then print it out.
+three_point_percentage = jamal_murray_3pts_made/jamal_murray_3pt_shot_attempts
+print(three_point_percentage)
+three_point_percentage = int(three_point_percentage)
+print(three_point_percentage)
+print(type(three_point_percentage))
+print()
+three_point_percentage = fred_vanvleet_3pts_made/fred_vanvleet_3pt_shot_attempts
+print(three_point_percentage)
+three_point_percentage = int(three_point_percentage)
+print(three_point_percentage)
+print(type(three_point_percentage))
+print()
+three_point_percentage = james_harden_3pts_made/james_harden_3pt_shot_attempts
+print(three_point_percentage)
+three_point_percentage = int(three_point_percentage)
+print(three_point_percentage)
+print(type(three_point_percentage))
