@@ -78,7 +78,7 @@ lyrics = 'At first I was afraid, I was petrified, \
 
 profit = 120
 
-my_f_string = 'the profit todsay is $ {profit*100}
+my_f_string = ('the profit todsay is $ {profit*100})
 print(my_f_string)
 
 # MAth wirh strings

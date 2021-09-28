@@ -100,6 +100,7 @@ Remove the 'favourite_dish' key value pair from that restaurant's dictionary
 '''
 
 # TODO: Remove the 'favourite_dish' key-value pair from one of your 3 restaurants
+restaurant.pop[fav_rest3 {'fav_dish':'sandwich'}]
 # TODO: Print the new dictionary. The new dictionary should only contain 'name' and 'address' for that restaurant
 
 print()
