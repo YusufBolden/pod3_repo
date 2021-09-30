@@ -99,12 +99,12 @@ print("Time to look at the range of prices. Print out all possible computer pric
 
 # TODO: print out all possible prices for the laptops
 # all prices here.
-print(f"{laptops[0]['types'][0]['price']} is the price for the Mac book with 13 in. screen.\n \
-{laptops[0]['types'][1]['price']} is the price for the 16 in Macbook pro.\n \
-{laptops[1]['types'][0]['price']} is the price for the Dell XPS 13.\n \
-{laptops[1]['types'][1]['price']} is the price for the Dell XPS.\n \
- These are the prices for all the laptops!")
+#print(f"{laptops[0]['types'][0]['price']} is the price for the Mac book with 13 in. screen.\n \
+#{laptops[1]['types'][1]['price']} is the price for the Dell XPS.\n \
+ #These are the prices for all the laptops!")
 
 #Side project: ( will attempt to get this working as a for loop!)
-#for x in laptops:
-    #print(laptops[:]['types'][:]['price'])
+for laptop in laptops:
+    for laptop_type in laptop['types']:
+        laptop_name = laptop['productName'] + ' ' + laptop_type['screen_size']
+        print(f"The {laptop_name} prices are {laptop_type['price']} depending on specifications.")
