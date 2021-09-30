@@ -3,11 +3,18 @@ print("Challenge 1: All possible laptops\n")
 
 print("Question 1: You are given a list containing the laptop names. Print the names of each the laptops separately.")
 all_laptops = ["Apple MacBook Pro", "Asus Zenbook", "Dell XPS", "Lenovo IdeaPad", "Apple MacBook Air", "Sony Viao"]
-
+print()
 # TODO: Write code to print all laptop names
+print(all_laptops[0])
+print(all_laptops[1])
+print(all_laptops[2])
+print(all_laptops[3])
+print(all_laptops[4])
+print(all_laptops[5])
+print()
 
 print("All laptops names:")
-
+print()
 
 # Challenge 2
 
@@ -72,16 +79,19 @@ laptops = [
             "description": "The Dell XPS is an absolutely brilliant laptop. The 2020  version rocks an 11th-generation Intel Core i3, i5 or i7 processor and a bezel-less ‘Infinity Edge’ display. This Dell XPS continues to be the most popular Windows laptop in the world. What’s more, there’s a wide range of customization options, so you can really make the Dell XPS the best laptop for your needs. "
         }
 ]
-
+print()
 # TODO: Write code to print out the MacBook Pro url 
-
+print(laptops[0]['url'])
+print()
 # TODO: Write code to print all possible prices of the 16-inch MacBook Pro.
-
+print(laptops[0]['types'][1]['price'])
+print()
 # TODO: Write code to print all the color options for Dell XPS 13.
-
+print(laptops[1]['types'][0]['colors'])
+print()
 # TODO: Write code to print the description of Dell XPS laptop.
-
-
+print(laptops[1]['description'])
+print()
 print("Question 2: Out of Stock laptops")
 print("Suppose that the 13-inch MacBook Pro in space gray color is sold out. Also, the same laptop with 1 TB storage is out of stock as well. Update the list of dictionaries such that these options are removed. Print the updated dictionary.")
 
