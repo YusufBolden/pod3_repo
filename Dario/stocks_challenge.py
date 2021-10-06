@@ -34,24 +34,27 @@ if stock == "amzn":
 elif ...
 else ...
 '''
+amnt_stock = 0
 if stock == "amzn":
-    print(savings/amazon)
+    amnt_stock = savings/amazon
 elif stock == "goog":
-    print(savings/google)
+    amnt_stock = savings/google
 elif stock == "fb":
-    print(savings/fb)
+    amnt_stock = savings/fb
 elif stock == "msft":
-    print(savings/msft)
+    amnt_stock = savings/msft
 elif stock == "aapl":
-    print(savings/apple)
+    amnt_stock = savings/apple
 else:
     print("insufficient funds")
+print(f'{name}, you can buy {amnt_stock} many stocks of {stock}.')
 print()
 
 print("Challenge 3.2.3: Output for the user the result")
 # TODO: Once you have calculated the number of stocks that can be purchased, print the result for the client. Result should be in a format like this:
 
 # Alex has $5000 in savings and he can buy 50 shares of Apple at the current price of $100.
-result = f"{name} has ${savings} in savings and can buy {savings/stock} shares of {stock} at the current price of $"
+#savings_current = int(savings)
+result = f"{name} has {savings} and he can buy {amnt_stock} shares of {stock} at the current price of {}
 print(result)
 

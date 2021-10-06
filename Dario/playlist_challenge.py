@@ -4,7 +4,7 @@
 # But, you'll run your functions here
 
 # 1 Import all the functions in playlist_functions.py
-from playlist_functions.py import *
+from playlist_functions import *
 import numpy as np
 # This code initializes your playlist as an empty list. no songs in it yet!
 my_playlist = []
@@ -36,8 +36,7 @@ display_playlist(my_playlist)
 # See playlist_functions.py for details on how to define this function
 # THEN, call that function in this script to get the length of my_playlist
 print('Question 6')
-num_of_tracks = get_playlist_length(my_playlist)
-display_playlist(my_playlist)
+print(get_playlist_length(my_playlist))
 # 7 At the top of this script, import numpy using the usual alias
 
 # 8: Using numpy, calculate the average monthly plays for a song
@@ -54,4 +53,4 @@ print('BONUS')
 play_track(my_playlist, 1)
 play_track(my_playlist, 2)
 play_track(my_playlist, 3)
-display_playlist(my_playlist) = 1
+print(display_playlist(my_playlist)) == 1
