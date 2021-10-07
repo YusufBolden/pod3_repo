@@ -9,9 +9,9 @@ u = 5
 v = 2
 
 if u * v == 10:
-    print(f"The product of u ({u}) + v ({v}) is 10")
+    print(f"The product of u ({u}) and v ({v}) is 10")
 else:
-    print(f"The product of u ({u}) + v ({v}) is not 10")
+    print(f"The product of u ({u}) and v ({v}) is not 10")
 
 print()
 
@@ -66,7 +66,7 @@ print("Code Snippet 5:")
 m = "GOAT"
 n = "goat"
 
-o = (not m == n)
+o = ( m != n)
 
 print (f"The value of o ({o}) is True since Python is case-sensitive.")
 assert(o == True) #Do not change this line
