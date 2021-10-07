@@ -47,7 +47,7 @@ elif stock == "aapl":
     amnt_stock = savings/apple
 else:
     print("insufficient funds")
-print(f'{name}, you can buy {amnt_stock} many stocks of {stock}.')
+print(f'{name}, you can buy {amnt_stock} stocks of {stock}.')
 print()
 
 print("Challenge 3.2.3: Output for the user the result")
@@ -55,6 +55,5 @@ print("Challenge 3.2.3: Output for the user the result")
 
 # Alex has $5000 in savings and he can buy 50 shares of Apple at the current price of $100.
 #savings_current = int(savings)
-result = f"{name} has {savings} and he can buy {amnt_stock} shares of {stock} at the current price of {}
-print(result)
-
+result = f"{name} has {savings} and he can buy {amnt_stock} shares of {stock} at the current price of ${savings/amnt_stock}."
+print(result), 2
