@@ -32,8 +32,8 @@ def create_account():
     ({'username:'} , input({'enter username here: '}))
     ({'password:'} , input({'create a password here: '}))
     ({'balance:' , input(float(0))
-    my_account = create_account()
-    print(my_account)
+    #my_account = create_account()
+    #print(my_account)
 
 
 '''
@@ -53,6 +53,8 @@ print('PART 2\n')
 def deposit(balance, x):
     {'account' : create_account()}
     {'amount' : my_amount['balance']}
+    x = my_amount()
+    print(x)
 
 
 
