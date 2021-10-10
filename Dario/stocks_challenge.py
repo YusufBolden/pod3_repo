@@ -56,4 +56,4 @@ print("Challenge 3.2.3: Output for the user the result")
 # Alex has $5000 in savings and he can buy 50 shares of Apple at the current price of $100.
 #savings_current = int(savings)
 result = f"{name} has {savings} and he can buy {amnt_stock} shares of {stock} at the current price of ${savings/amnt_stock}."
-print(result), 2
+print(result)
