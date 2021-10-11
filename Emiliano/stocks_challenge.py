@@ -12,14 +12,14 @@ msft = 200
 
 # Input values
 client_1 = ''
-client_savings = ''
+client_savings = input(int())
 
 # Tickers
-amazon = "amzn"
-apple = "aapl"
-fb= "Facebook"
-google = "goog"
-msft = "microsoft"
+# amazon = "amzn"
+# apple = "aapl"
+# fb= "Facebook"
+# google = "goog"
+# msft = "microsoft"
 
 
 
@@ -47,14 +47,19 @@ stock = input("Which stock are you interested in? Type 'amzn' for Amazon, 'aapl'
 # # TODO: You have all 3 user inputs stores in variables. Based on that, write conditional (if-elif-else) statements to find out the number of stocks of the company that can be purchased with the savings amount.
 
 if stock == amazon:
-  client_savings - stock
+  stock - client_savings
   print("User wants to purchase Amazon")
   print(client_savings)
   print("Congratulations on your purchase!")
-# if stock == "aapl":
-#     print ("user wants to buy Apple")
+elif stock == amazon:
+    client_savings<=amazon
+    print("congratulations! you bought amazon")
+else:
+    print("you don't have enough money")
+if stock == "aapl":
+    print ("user wants to buy Apple")
 
-# elif stock == "amzn": 
+elif stock == "amzn": 
 # if the stock is equal to amazon then deduct the cost of amzn from savings. 
 
 
