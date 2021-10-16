@@ -7,7 +7,7 @@ def display_playlist(playlist):
 		print('Playlist is empty!')
 	else:
 		for i in range(len(playlist)):
-			print(f'Track {i+1}: {playlist[i]["plays"]} plays \
+			print(f'track {i+1}: {playlist[i]["plays"]} plays \
 				  \n\t-{playlist[i]["title"]} by {playlist[i]["artist"]}')
 
 # function to add a song to the playlist
@@ -45,9 +45,8 @@ Assuming that the third track in your playlist 'Controversy' by 'Prince'
 This function should ALSO increase the 'plays' value for that song's dictionary by 1
 So, if 'Controversy' has 0 plays so far, it should now be increased to 1
 '''
-def play_track(playlist, track1):
-	track = track -1
-	track_title = playlist[track]['title'] 
-	track_artist = playlist[track]['artist']
-	print(f'Now Playing track {track}, {track_title}, by {track_artist}')
-	playlist[track]['plays'] = 	playlist[track]['plays'] +1
+def play_track(playlist, track):
+	track_title = playlist[track-1]['title'] 
+	track_artist = playlist[track-1]['artist']
+	print(['Now Playing: (track-1), {track_title}, by {track_artist}'])
+	playlist[track-1]['plays']+=1
