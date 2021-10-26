@@ -1,0 +1,34 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+ol, p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#blue {
+    color: blue;
+}
+
+#green {
+    color: green;
+}
+
+#brown {
+    color: brown;
+    font-style: italic;
+}
+
+p {
+    color: indigo;
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+}
+
+form {
+   font-weight: 900;
+}
