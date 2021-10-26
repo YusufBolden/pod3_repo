@@ -5,51 +5,36 @@
     <meta http-equiv="x-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device=width, initial-scale-1.0" />
     <title>Dario style page</title>
-    <style>
-        h1 {
-            color: red;
-            text-align: center;
-        }
-        
-        #ol {font-style: italic;}
-
-        h2 {
-            color: blue;
-            text-align: center;
-        }
-
-        p {
-           font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        form {
-           font-weight: 900;
-        }
-
-    </style>
-    <link rel="stylesheet" href="file:///C:/Users/depen/Documents/02_git/Class_repo_3/pod3_repo/Dario/practice.html" />
+    <link href="styles.css"rel="stylesheet" />
 </head>
+
 <body>
     <h1>Dario Webpage Exercise</h1>
+    
     <ol>
-        <li>I was born in NYC</li>
-        <li>I love to work out</li>
-        <li>I am a fan of live theater</li>
+        <li id='blue'>I was born in NYC</li>
+        <li id='green'>I love to work out</li>
+        <li id='brown'>I am a fan of live theater</li>
     </ol>
+    
     <h2>HTML and CSS Exercise</h2>
+    
     <p>I am learning HTML and CSS. It is an amazing thing to see the code produce content on the screen. It is also fun!</p>
+    
     <img
     src="https://cdn.imagecomics.com/assets/i/series/430194/spawn_7c8dfedccb.jpg"
     width="600"
     height="200"
     alt="comment meme"
     />
+    <div style="text-align: center;">
     <img
     src="https://lh3.googleusercontent.com/UShERpwdOZML3GDhxN_R5P2qVOUHoLBeh-GxwI42ODDvYNBjasPOPnE0PB4lmRRCeNczbW3Tc9CvZllCwHtwrd9WYEM5pF-qIYy9ReONhPCArMpdqm0tuRsG5A_Pvxl1dHNEfK6dKYYPrpd-0wrC1SvUdPq2frDjeaPT20AFCcqauEYwHZrDpIBoMpe52-ksErRP4lyHV9aZIlWpi3OrZS_O4X67jTaSk5xBSb8DcCaD4bDqi1U3VHphcFshvyj7ngonxvWCB2XioXIV52sxSWvWdzxwUkZjxe-2cAGK6Kny7ZqOwS8bMcbLPEKRHLqyJx7QnGNRsw1qQMrr-Z_TunQWgzPLBq0qH_IIIsq6a-CPaL3DppAOP9dilLqfgdDBkXYIdjfQqYb_pF8JPz29uUqtTdOFjX5bCs9rRXQweAU-TllSKblBEjYIcqjyjI7P1E608mOM7eUsVeAmxiAfk4_053QXyVa2WnPU9an9qPtrSmAaLHcygZ3tOitA_joA0BHcBmI7ZF-h40OsiXIxjkTFd_d0r9LiiAXiQoFqt5IUKKZIu1pgEyoZOfc0DK2gh-M3AfsYMai67bc2KI3L7U28LBbgvv-CGqofVm4n-aZiz4Rq4T-13-qxyt_WQnfwGX7mFohKWP8etD9Zn-biPS3vea6S95JIunFtHJDgviqdlS7BrvKSRajZm5uv9D_NC9AHONxHG_o4aKsZGLtrP7hA=w636-h477-no?authuser=0"
     width="300"
     height="200"
-    alt="comment meme"
-    />
+    alt="comment meme"/>
+    </div>
+    
     <form>
         <label for="fullname">FULLNAME:</label>
         <input name="fullname" type="text" value=""
@@ -59,7 +44,17 @@
         <input name="Age" type="text" value=""
         placeholder="10" />
         <button type="Submit">SUBMIT</button>
+        <br>
+        <p>How old are you?</p>
+        <input type="radio" id="child" name="age" value="child">
+        <label for="child">17 years or younger</label><br>
+        <input type="radio" id="adult" name="age" value="adult">
+        <label for="adult">18 - 64 years</label><br>
+        <input type="radio" id="senior" name="age" value="senior">
+        <label for="senior">65 years or older</label>
     </form>
+    
+    <link rel="stylesheet" href="file:///C:/Users/depen/Documents/02_git/Class_repo_3/pod3_repo/Dario/practice.html" />
 </body>
 </html>
 <!--I am creating a webpage with text, URL's, images, and a form with name, age, and submit button.-->
