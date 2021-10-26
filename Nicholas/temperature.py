@@ -16,5 +16,5 @@ print((5 * 9/5) + 32)
 # 5.Answering the question: what is hotter 30.2 degree celsius or 85.1 degrees fahrenheit? (Guess is the 30.2 degree celsius)
 fahrenheit_conversion = (30.2 *9/5)+32
 celsius_conversion = (85.1-32) * (5/9)
-print(bool(fahrenheit_conversion == celsius_conversion))
+print(bool(fahrenheit_conversion <= celsius_conversion))
 

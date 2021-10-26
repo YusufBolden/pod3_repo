@@ -8,8 +8,8 @@ top_50_list = ['Star Wars: Episode I - The Phantom Menace', 'The Sixth Sense', '
 
 # TODO: Take the string "movies_str" and convert it into a list and assign it to a variable called "remaining_50_list"
 # Note: Print your new variable to see the list of movies
-print()
-
+remaining_50_list = movies_str.split(' , ')
+print(remaining_50_list)
 # TODO: Hmm. Looks like "remaining_50_list" contains the movie "The Matrix" which is also in the "top_50_list". Let's remove this duplicate title from "remaining_50_list".
 # Note: Make sure to double check the list you are removing from!
 print()
