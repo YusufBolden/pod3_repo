@@ -43,8 +43,9 @@ def create_account():
 create_account()
 
 
-# def deposit():
-#     add_money = (input(float()))
+def deposit(add_money):
+    for i in create_account(['balance'])
+       add_money = (input(float()))
 #     add_money.append(new_account[balance])
    
     
