@@ -1,4 +1,5 @@
 print("Challenge 3.2: Playing with the stock market")
+import math 
 
 print()
 
@@ -11,8 +12,8 @@ google = 1400
 msft = 200
 
 # Input values
-client_1 = ''
-client_savings = input(int())
+
+
 
 # Tickers
 # amazon = "amzn"
@@ -27,15 +28,14 @@ client_savings = input(int())
 
 print("Challenge 3.2.1: Taking user input")
 # TODO: Write code to ask the client his name and save it to a variable.
-
+client_1 = input("Please enter your name: ")
 # print(f'Hi! Whats your name?{client_1}')
-client_1 = input("Hi! Whats your name? ")
-
-
+print(client_1)
 
 # TODO: Write code to ask the client his savings and save it to another variable.
+client_savings = int(input("How much have you saved: "))
+print(f"you saved {client_savings}")
 
-client_savings = input("How much money have you saved")
 # # TODO: Write code to ask the client the stock he is interested in and save it to another variable, as shown below.
 stock = input("Which stock are you interested in? Type 'amzn' for Amazon, 'aapl' for Apple, 'fb' for Facebook, 'goog' for Google and 'msft' for Microsoft.")
 
@@ -46,20 +46,34 @@ stock = input("Which stock are you interested in? Type 'amzn' for Amazon, 'aapl'
 # print("Challenge 3.2.2: Perform user-specific calculations")
 # # TODO: You have all 3 user inputs stores in variables. Based on that, write conditional (if-elif-else) statements to find out the number of stocks of the company that can be purchased with the savings amount.
 
-if stock == amazon:
-  stock - client_savings
+if stock == 'amzn':
+  stock = client_savings / amazon
+  stock = math.floor(stock)
   print("User wants to purchase Amazon")
-  print(client_savings)
+  print(f"you just bought{stock}")
   print("Congratulations on your purchase!")
-elif stock == amazon:
-    client_savings<=amazon
-    print("congratulations! you bought amazon")
-else:
-    print("you don't have enough money")
-if stock == "aapl":
-    print ("user wants to buy Apple")
+elif stock == 'aapl':
+    stock = client_savings / apple
+    print("Congratulations on your Apple purchase!")
+    print(f"you just bought{stock}")
+elif stock == 'fb':
+    stock = client_savings / fb
+    print("User wants to purchase Facebook")
+    print(f"you just bought{stock}")
+    print("Congratulations on your purchase!")
+elif stock == 'goog':
+    stock = client_savings / google
+    print("User wants to purchase Google")
+    print(f"you just bought{stock}")
+    print("Congratulations on your purchase!")
+elif stock == 'msft':
+    stock = client_savings / msft
+    print("User wants to purchase MicroSoft")
+    print(f"you just bought{stock}")
+    print("Congratulations on your purchase!")
+else: 
+    print("sucka you ain't got no money to invest!")
 
-elif stock == "amzn": 
 # if the stock is equal to amazon then deduct the cost of amzn from savings. 
 
 
@@ -81,4 +95,3 @@ elif stock == "amzn":
  # Alex has $5000 in savings and he can buy 50 shares of Apple at the current price of $100.
 
 # print()
-

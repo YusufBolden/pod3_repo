@@ -1,5 +1,5 @@
 # Challenge 1
-from pprint import pprint
+from pprint import pp, pprint
 print("Challenge 1: All possible laptops\n")
 
 print("Question 1: You are given a list containing the laptop names. Print the names of each the laptops separately.")
@@ -90,6 +90,7 @@ print("Question 2: Out of Stock laptops")
 print("Suppose that the 13-inch MacBook Pro in space gray color is sold out. Also, the same laptop with 1 TB storage is out of stock as well. Update the list of dictionaries such that these options are removed. Print the updated dictionary.")
 
 # TODO: Update the laptops dictionary.
+laptops.pop([0]['types'])
 # TODO: Print the new dictionary.
 
 print("Question 3: listing all the prices")
