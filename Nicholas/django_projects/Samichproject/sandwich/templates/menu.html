@@ -1,0 +1,8 @@
+<h1>The list of possible sandwiches are: </h1>
+
+<!-- so sandwich is what is iterating the menus function that you created in views.py-->
+<ol>
+    {%for sandwich in menus%}
+    <li> {{sandwich|title}}</li>
+    {% endfor %}
+</ol>

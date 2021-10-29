@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+    color: rgb(4, 66, 250);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* the # is the id marker */
+#firstpara{
+    text-align: center;
+    color: green;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+h2 {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* this is a class  and a comment is made with ctrl foward slash*/
+.greenish {
+    color: rgb(31, 126, 105);
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.center {
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+}
+
+#redcol {
+    color: red;
+}
+#bluecol {
+    color: blue;
+}
+#silvcol {
+    color: silver;
+    font-family: italic;
+}
+
+.bolder {
+    font-weight: bold;
+}
