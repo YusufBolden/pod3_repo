@@ -1,4 +1,4 @@
-l'''
+'''
 For this challenge, you will work in groups of 2 to 'pair program'
 You'll need to work together to complete this challenge!
 In general, 1 person should be typing, and the other should be leading what to code
@@ -29,9 +29,18 @@ print('PART 1\n')
 # HINT: make sure it works by doing something like my_account = create_account()
 # Then print out my_account to see whether it has the correct info
 def create_account():
-    username : input("please create a username here: ")
+    username = input("please create a username here: ")
     password = input("please create a password here: ")
-    balance = input ("0.0")
+    balance = 0
+    account_data = {
+        "username" : username,
+        "password": password,
+        "balance": balance
+    }
+    return account_data
+
+acc = create_account()
+print(acc)
 
 '''
 PART 2: deposit()
@@ -47,8 +56,16 @@ Test your function by making a few deposits to your account, then printing out y
 
 print('PART 2\n')
 # TODO define the deposit() function here and make sure it works
+def deposit(account, amount):
+    account["balance"] += amount
 
-
+print("")
+print("Depositing money: ")
+deposit(acc, 100)
+deposit(acc, 50)
+deposit(acc, 1600)
+deposit(acc, 10)
+print(acc)
 
 '''
 PART 3: withdraw()
@@ -67,7 +84,18 @@ Test your function by making several withdrawals to your account
 
 print('PART 3\n')
 # TODO define the withdraw() function here and make sure it works
+def withdraw(account, amount):
+    if account["balance"] >= amount:
+        account["balance"] -= amount
+    else:
+        print("There are not enough funds in the account")
 
+print("Withdrawing money")
+withdraw(acc, 100)
+withdraw(acc, 1000)
+withdraw(acc, 500)
+withdraw(acc, 200)
+print(acc)
 
 '''
 BONUS QUESTION 4: Password-protect withdrawal and deposits
@@ -82,3 +110,29 @@ Test out your new functions to make sure they accept correct info, and let the u
 # TODO: define password-protected withdraw_secure() and deposit_secure() functions
 # HINT: there are tons of ways to do this correctly
 # HINT: you can write any additional functions if you like
+def deposit_secure(account, amount):
+    user = input("Enter your username: ")
+    pw = input("Enter your password: ")
+    if user == account["username"] and pw == account["password"]:
+        account["balance"] += amount
+    else:
+        print("Wrong information, try again.")
+
+def withdraw_secure(account, amount):
+    user = input("Enter your username: ")
+    pw = input("Enter your password: ")
+    if user == account["username"] and pw == account["password"]:
+        if account["balance"] >= amount:
+            account["balance"] -= amount
+        else:
+            print("There are not enough funds in the account")
+    else: 
+        print("Wrong information, try again.")
+
+print("Deposit secure: ")
+deposit_secure(acc, 1000)
+print(acc)
+
+print("\nWithdrawal secure")
+withdraw_secure(acc, 500)
+print(acc)
