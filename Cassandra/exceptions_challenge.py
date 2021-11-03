@@ -7,7 +7,7 @@ if a < b:
 else:
     print(f'{a} is greater than {b}')
 
-print('')
+print('Indentation error fixed\n')
 
 print('Question 2')
 # TODO: Fix error(s) so that a list of sandwiches with unique combinations of meats and cheeses is printed at line 22
@@ -53,7 +53,7 @@ print(fruits[3])
 print(fruits[4])
 
 
-print('')
+print('fixed indexes, starts from 0 -4 not 1 - 5\n')
 
 print('Question 5')
 
@@ -64,10 +64,10 @@ num = input("Enter a number to compute it's square value: ")
 # TODO: Bonus: Add a finally block to print 'The End'
 try:
     print(int(num) * int(num))
-except:
-    print('Something Went Wrong!')
+except ValueError:
+    print("If an exception exists, print 'Something Went Wrong!\n")
 finally:
-    print('The End')
+    print('The End\n')
 
 print('Question 6')
 

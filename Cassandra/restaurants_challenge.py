@@ -30,12 +30,17 @@ restaurant = {
     "transactions": ["pickup", "delivery"]
 }
 
-print(restaurant)
+
 
 # TODO: Write code to print the latitude and longitude of Four Barrel Coffee.
-# TODO: Write code to print the complete address of the Four Barrel Coffee, formatted as a string - it should include the address, city, state and the zip code.
-# TODO: Write code to print the URL of the website of Four Barrel Coffee.
+print(restaurant["latitude"], ", ",  restaurant["longitude"])
 
+# TODO: Write code to print the complete address of the Four Barrel Coffee, formatted as a string - it should include the address, city, state and the zip code.
+address = restaurant["address1"] +", " + restaurant["city"] + ", " + restaurant["state"] + " " +  restaurant["zip_code"]
+print(address)
+
+# TODO: Write code to print the URL of the website of Four Barrel Coffee.
+print(restaurant["url"])
 
 print()
 
@@ -46,15 +51,36 @@ print("Question 2")
 #         2. address: address of the restaurant (string)
 #         3. favourite_dish: your favourite thing to order at the restaurant (string)
 
+
+restaurant_1  = {
+    "name": "McDonalds",
+    "address" : "116th & Broadway, NY 10016",
+    "favorite_dish" : "Big Mac" }
+
+restaurant_2 = {
+    "name" : "Chickfila", 
+    "address" : "123 St",
+    "favorite_dish" : "Chicken Sandwich"
+}
+
+restaurant_3 = {
+    "name" : "AppleBees", 
+    "address" : "143 St",
+    "favorite_dish" : "Icecream"
+}
+
 # TODO: Print each dictionary
+print(restaurant_1)
+print(restaurant_2)
+print(restaurant_3)
 
 # The dictionary for each restaurant should look something like this
-
 '''
-restaurant_1  = {
-    "name": "Subway",
-    "address" : "116th & Broadway, NY 10016",
-    "favourite_dish" : "Chicken BLT Sandwich" }
+restaurant_1 = {
+    "name" : "Subway", 
+    "address" : "123 St",
+    "favorite_dish" : "Chicken BLT Sandwich"
+}
 '''
 
 print()
@@ -66,7 +92,10 @@ Remove the 'favourite_dish' key value pair from that restaurant's dictionary
 '''
 
 # TODO: Remove the 'favourite_dish' key-value pair from one of your 3 restaurants
+restaurant_1.pop("favorite_dish")
+
 # TODO: Print the new dictionary. The new dictionary should only contain 'name' and 'address' for that restaurant
+print(restaurant_1)
 
 print()
 
@@ -77,7 +106,12 @@ Update just this value in that restaurant's dictionary
 '''
 
 # TODO: Update the address field of 1 restaurant 
+restaurant_2["address"] = "New address 123"
+
 # TODO: Print the new address of the restaurant by accessing that field of the restaurant's dictionary
+print(restaurant_2["address"]) 
+
 # TODO: Print the updated dictionary.
+print(restaurant_2)
 
 print()

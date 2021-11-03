@@ -9,6 +9,7 @@ This class and the methods are already imported in this script -- test them here
 '''
 
 # import the Booklist class and corresponding methods
+from typing import no_type_check_decorator
 from book_class import *
 
 
@@ -45,23 +46,12 @@ My Grandmother's Hands - Resmaa Menakem
 Finally, print the books attribute of my_library to make sure your books have been added!
 '''
 print('\nPart 2\n')
-# test_dict = {'title': 'dict'}
-# test_list = []
-# print(test_dict['title'])
-my_library.books
-'''
- - 
- - 
-The Truths We Hold - Kamala Harris
-My Grandmother's Hands - Resmaa Menakem
-'''
-# test_list.append(test_dict)
+
 my_library.add(title='Just Mercy', author='Bryan Stevenson')
-
 my_library.add(title='The New Jim Crow', author='Michelle Alexander')
-
+my_library.add(title= 'The Truths We Haold', author= "Kamala Harria") 
+my_library.add(title= "My Grandmother's Hands", author= "Resmaa Menakem")
 print(my_library.books)
-# purple = Booklist()
 
 
 
@@ -74,12 +64,14 @@ Define the count_books() method to get the number of books in an object of class
 
 Once you have finished the method, count the books in my_library and print out the result
 '''
-print('\nPart 3\n')
 
+print('\nPart 3\n')
+print("Total is", my_library.count_books(), "books")
+print(my_library.count_books())
 
 
 '''
-Part #4: 
+Part #4:    
 Define the remove_title() method which will remove a book by its title from an objectof class Booklist
 -the method should take the self parameter, plus an additional paramter 'title' (a string for the title of the book to remove)
 -the method should remove any books matching the input title from the Booklist
@@ -90,7 +82,10 @@ Then, print out the books attribute to make sure that book is gone
 '''
 
 print('\nPart 4\n')
+my_library.remove_title("Just Mercy")
 
+print(my_library.books)
+print(my_library.count_books())
 
 '''
 Part #5:
@@ -102,8 +97,11 @@ Then, print out the books attribute of nyt_bestsellers
 '''
 
 print('\nPart 5\n')
+nyt_blestsellers=Booklist()
+nyt_blestsellers.add("Hillary Rodham Clinton - State of Terror", "Hillary Rodham and Louise Penny")
+nyt_blestsellers.add("Peril", Bob Woodward and Robert Costa")
 
-
+print(nyt_bellsellers.books)
 
 '''
 BONUS Part #6:
@@ -117,3 +115,5 @@ Once you have completed this method, test it out on both my_library and nyt_best
 '''
 
 print('\nBONUS Part 6\n')
+
+

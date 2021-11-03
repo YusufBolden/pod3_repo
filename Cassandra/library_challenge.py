@@ -5,23 +5,33 @@ books = ['MY OWN WORDS', 'WHITE FRAGILITY', 'THE BODY KEEPS THE SCORE', 'SO YOU 
 
 # 1.0
 # What data type is the object 'books'? How do you know?
-
+#Answer: It is a list. I kmow that because when I put my cursor over "books" "(varible) books: list[str]"appear
 
 # 1.1
 # Create a function 'available_books' to print the books list
 # Parameters: Not needed for this function
 # Return: Not needed for this function
 
+def available_books():
+    for book in books:
+        print(book)
+
 # 1.2
 # Run the 'available_books' function
+available_books()   
+print()
 
 # 1.3
 # Create a function 'check_out' that removes a book from the books list
 # Parameters: book (string)
 # Return: Not needed for this function
 
+def check_out(book):
+    books.remove(book)
+
 # 1.4
 # Check out 'SAPIENS' using the check_out function
+check_out("SAPIENS")
 
 # Bonus: Run available_books function again to see if the book was checked out
 
@@ -29,21 +39,34 @@ books = ['MY OWN WORDS', 'WHITE FRAGILITY', 'THE BODY KEEPS THE SCORE', 'SO YOU 
 # Create a function 'check_in' that adds a book to the books list
 # Parameters: book (string)
 # Return: Not needed for this function
+def check_in(book):
+    books.append(book)
 
 # 1.6
 # Check in 'SAPIENS' using the check_in function
+check_in("SAPIENS")
 
 # Bonus: Run available_books function to see if the book was checked in
+available_books()
+print()
+print("Sapiens added back to list")
 
 # 1.7
 # Create a function 'search_by_name' that prints 'Available' if exists in books list, 'Not Available' if it doesn't.
 # Parameters: book (string)
 # Return: Not needed for this function
 
+def search_by_name(book):
+    if book in books:
+    else:    
+        print(f"{book} is not available")
+
 # 1.8
 # Search for the book 'JUST MERCY'
-
 print()
+search_by_name("JUST MERCY")
+print("Gives not abvailable for books not on list vv")
+
 
 print('Question 2')
 # Here's the same list of books, with additional details

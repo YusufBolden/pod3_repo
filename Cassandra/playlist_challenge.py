@@ -4,7 +4,8 @@
 # But, you'll run your functions here
 
 # 1 Import all the functions in playlist_functions.py
-
+import numpy 
+from playlist_functions import 
 # This code initializes your playlist as an empty list. no songs in it yet!
 my_playlist = []
 
@@ -12,6 +13,9 @@ my_playlist = []
 # 2 Check what is in your playlist using the display_playlist() function
 # HINT: the display_playlist() function in playlist_functions.py to figure out how to use it
 print('Question 2')
+print("using function from other file, playlist_function, to check\n".upper()) 
+display_playlist(my_playlist)
+print()
 
 # 3 Add a song to my_playlist using the add_song() function
 # The song that you add should be a dictionary, with the following key-value pairs
@@ -21,14 +25,21 @@ print('Question 2')
 '''
 example_song = {'artist': 'Lauryn Hill', 'title': 'Everything Is Everything'}
 '''
-
+add_song(my_playlist, {"artist": "Lauren Diagle", "title": "I Believe"})
 
 # 4 Check that you've added the song by running the display_playlist() function again
 print('Question 4')
+print("Checking added song(s) on the list".upper())  
+print()
+display_playlist(my_playlist)
 
 # 5 Add 2 more songs to my_playlist, then display it again using the display_playlist() function
 print('Question 5')
+print()
 
+add_song(my_playlist, {"artist": "Kirk Franklin", "title": "Smile"})
+add_song(my_playlist, {"artist": "Because of You Are": Martha Munnzzi"})
+display_playlist(my_playlist)
 
 # 6 In playlist_functions.py, define a function called get_playlist_length()
 # See playlist_functions.py for details on how to define this function

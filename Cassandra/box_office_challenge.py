@@ -12,6 +12,8 @@ remaining_50_list = movies_str.split (',')
 print(remaining_50_list)
 
 
+print(len(remaining_50_list))
+
 # TODO: Hmm. Looks like "remaining_50_list" contains the movie "The Matrix" which is also in the "top_50_list". Let's remove this duplicate title from "remaining_50_list".
 "remaining_50_list".split
 remaining_50_list.remove('The Matrix')
@@ -32,16 +34,16 @@ print(remaining_50_list)
 print(len(remaining_50_list))
 
 # TODO: Great! Let's join the two lists into one list called "top_100".
-top_100 = top_50_list + remaining_50_list )
+top_100 = top_50_list + remaining_50_list 
 
 # Note: Print your new variable to see the combined list of movies
 print(top_100)
 
 # TODO: Let's print the first movie in our "top_100" list. Let's use the index lookup method to do this.
-printtop_(100[0])
+print(top_100[0])
 
 # TODO: Let's print the top 10 movies in "top_100" as a list. Let's use the slice syntax to accomplish this!
-print(top_1-00[0-9])
+print(top_100[0:10])
 
 # TODO: Let's convert the list "top_100" back into a string. Assign it to a variable called "top_100_str".
 # Note: Print your new variable to see the string version of the movies
