@@ -42,6 +42,11 @@ def task(request, task_id):
                 Todo.objects.filter(pk=task_id).update(task=task)
         elif 'delete' in request.POST:
             Todo.objects.filter(pk=task_id).delete()
+        elif 'completed' in request.POST:
+            form = TodoForm(request.POST)
+            if form.is_valid():
+                task = form.cleaned_data['task']
+                Todo.objects.filter(pk=task_id).update(completed=True)
         return HttpResponseRedirect(reverse('todo'))
 
 

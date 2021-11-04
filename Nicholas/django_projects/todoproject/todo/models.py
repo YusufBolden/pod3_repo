@@ -4,4 +4,4 @@ from django.db import models
 class Todo(models.Model):
     task_id = models.AutoField(primary_key=True)
     task = models.CharField(max_length=255)
-    completed = models.BooleanField(default = False)
+    completed = models.BooleanField(default=False)
