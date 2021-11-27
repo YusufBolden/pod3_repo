@@ -1,0 +1,12 @@
+<h1>Notes to self</h1>
+
+<ol>
+    <li>Django models can be tricky to work with at first, but are very powerful</li>
+    <li>Have to remember to use the migrations when I update the model structure</li>
+    <li>Makemigrations then migrate</li>
+</ol>
+
+<form action="{% url 'notes' %}" method="POST">
+    {% csrf_token %} {{ form }}
+    <input type="submit" name="create" value="Create" />
+</form>
