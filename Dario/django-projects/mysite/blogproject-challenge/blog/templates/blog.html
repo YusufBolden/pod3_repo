@@ -6,6 +6,7 @@
 <div style="padding: 32px 0px">
     <img style="display: block" src="{{ post.img_link }}" height="200" />
     <a href="{% url 'edit' post.post_id %}">Edit Post</a>
+    <a href="{% url 'create' post.post_id %}">Create Post</a>
     <h2>{{ post.title }}</h2>
     <p>{{ post.body }}</p>
     <div>
