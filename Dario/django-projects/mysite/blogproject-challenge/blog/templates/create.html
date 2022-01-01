@@ -8,7 +8,7 @@
 
 <h1>Create Post</h1>
 
-<form action="{% url 'create' id %}" method="POST">
+<form action="{% url 'create' id %}" method="EditorForm">
     {% csrf_token %} {{ form }}
     <input type="submit" name="save" value="Save" />
     <input type="submit" name="delete" value="Delete" />
