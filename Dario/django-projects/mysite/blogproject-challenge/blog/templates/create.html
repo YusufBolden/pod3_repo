@@ -1,0 +1,16 @@
+<style>
+    input[type='text'],
+    input[type='url'],
+    textarea {
+        display: block;
+    }
+</style>
+
+<h1>Create Post</h1>
+
+<form action="{% url 'create' id %}" method="POST">
+    {% csrf_token %} {{ form }}
+    <input type="submit" name="save" value="Save" />
+    <input type="submit" name="delete" value="Delete" />
+</form>
+
